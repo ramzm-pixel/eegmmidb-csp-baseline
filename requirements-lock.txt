@@ -1,0 +1,10 @@
+# Python 3.14.3
+joblib==1.5.3
+matplotlib==3.11.0
+mne==1.12.1
+numpy==2.4.4
+pandas==3.0.2
+pytest==9.1.1
+scikit-learn==1.9.0
+scipy==1.18.0
+statsmodels==0.15.0

@@ -1,0 +1,8 @@
+data/
+epochs/
+results/results_long.csv
+results/results_calibration.csv
+__pycache__/
+.pytest_cache/
+*.fif
+.ipynb_checkpoints/
