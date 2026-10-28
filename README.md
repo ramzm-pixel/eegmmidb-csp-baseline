@@ -10,7 +10,7 @@ A controlled analysis of a standard CSP + LDA decoder on the PhysioNet EEG Motor
 3. Timing: which 1.5 s window after the cue is best (equal-length windows only; the 4 s task window is reported separately because window length is confounded with covariance-estimation quality).
 4. Real vs imagined movement, and left/right fist vs fists/feet.
 
-Features are 8-30 Hz log band power (ERD/ERS).
+Features are the log power of 6 CSP spatial-filter outputs, computed on 8–30 Hz band-passed EEG (the ERD/ERS effect), classified with shrinkage LDA.
 
 ## Validation
 Within-subject accuracy uses leave-one-run-out cross-validation. Cross-subject arms are evaluated on every trial of the held-out subject, except the calibration arms, which are scored on the trials not used for calibration. All contrasts are paired across subjects (Wilcoxon), pre-specified in `stats.py`, and corrected with Holm over the whole family.
